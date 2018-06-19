@@ -1,10 +1,26 @@
+/*============ Globals =========*/
+
 * {
 	color: lightgrey;
-	font-family: 'lato';
+	font-family: 'Roboto Slab', serif;
 	font-size: 12px;
 	font-weight: normal;
 	background-color: #24292E;
+	box-sizing: border-box;
 }
+
+ol,
+ul {
+	list-style: none;
+}
+
+body {
+	line-height: 1;
+	box-sizing: border-box;
+
+}
+
+/*============ Globals =========*/
 
 /*============Fontello section=========*/
 
@@ -18,7 +34,7 @@
 
 .icon-github-squared:before {
 	content: '\f300';
-	color: #24292E;
+	color: whitesmoke;
 	font-size: 1.2rem;
 }
 
@@ -28,6 +44,61 @@
 
 /*============HEADER section=========*/
 
+header {
+
+	border: 3px solid yellow;
+	width: 100vw;
+
+}
+
+header nav {
+	background: aqua;
+	display: flex;
+	height: auto;
+	width: 100vw;
+
+	z-index: 0;
+}
+
+header figure {
+
+	position: relative;
+	width: 100vw;
+	border: 3px solid red;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 2.3rem;
+	color: transparent;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: rgba(255, 255, 255, 0.5);
+
+}
+
+header nav ul {
+	position: flex;
+	display: flex;
+	width: 100wv;
+	border: 3px solid black;
+
+	padding: auto;
+	margin: auto;
+	flex-direction: row;
+}
+
+header nav ul li {
+	font-size: 0.7rem;
+	display: block;
+	text-align: center;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	width: 20vw;
+	border: 3px solid aqua;
+
+
+}
+
+
 /*============HEADER section=========*/
 
 /*============MAIN section=========*/
@@ -36,32 +107,35 @@
 
 /*============FOTTER section=========*/
 
+fotter {
+	margin-top: 50px;
+	position: flex;
+}
+
 fotter section #aGithub,
-fotter section #aGithub a:link,
-fotter section #aGithub a:hover,
-fotter section #aGithub a:visited,
-fotter section #aGithub a:active {
+fotter section #aGithub:link,
+fotter section #aGithub:hover,
+fotter section #aGithub:visited,
+fotter section #aGithub:active {
 	text-decoration: none;
 }
 
-fotter section #aGithub a:hover {
+fotter section #aGithub:hover {
 	color: white;
 	text-decoration: underline;
 }
 
-/*
-fotter section,
-fotter section a:link,
-fotter section a:hover,
-fotter section a:visited,
-fotter section a:active {
+fotter section #alinkedin,
+fotter section #alinkedin:link,
+fotter section #alinkedin:hover,
+fotter section #alinkedin:visited,
+fotter section #alinkedin:active {
 	text-decoration: none;
 }
 
-fotter section a:hover {
+fotter section #alinkedin:hover {
 	color: #0077B5;
 	text-decoration: underline;
 }
-*/
 
 /*============FOTTER section=========*/
