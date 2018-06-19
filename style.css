@@ -1,1 +1,67 @@
+* {
+	color: lightgrey;
+	font-family: 'lato';
+	font-size: 12px;
+	font-weight: normal;
+	background-color: #24292E;
+}
 
+/*============Fontello section=========*/
+
+.icon-linkedin-squared:before {
+	content: '\f30c';
+	font-size: 1.2rem;
+	color: #0077B5;
+}
+
+/* '' */
+
+.icon-github-squared:before {
+	content: '\f300';
+	color: #24292E;
+	font-size: 1.2rem;
+}
+
+/* '' */
+
+/*============Fontello section=========*/
+
+/*============HEADER section=========*/
+
+/*============HEADER section=========*/
+
+/*============MAIN section=========*/
+
+/*============MAIN section=========*/
+
+/*============FOTTER section=========*/
+
+fotter section #aGithub,
+fotter section #aGithub a:link,
+fotter section #aGithub a:hover,
+fotter section #aGithub a:visited,
+fotter section #aGithub a:active {
+	text-decoration: none;
+}
+
+fotter section #aGithub a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+/*
+fotter section,
+fotter section a:link,
+fotter section a:hover,
+fotter section a:visited,
+fotter section a:active {
+	text-decoration: none;
+}
+
+fotter section a:hover {
+	color: #0077B5;
+	text-decoration: underline;
+}
+*/
+
+/*============FOTTER section=========*/

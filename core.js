@@ -1,8 +1,9 @@
-var github = '<a href="https://github.com/Kratak" target="_blank">&lt; github &gt;</a>';
-var linkedin = '<a href="https://www.linkedin.com/in/maciej-kaczanowski-189404166/" target="_blank">&lt; linkedin &gt;</a>';
-
-document.getElementById("fotIn").innerHTML =
-	"made by Maciej Kaczanowski " + "</br>" + github + " " + linkedin;
+//var github = '<i class="icon-github-squared"></i><a href="https://github.com/Kratak" target="_blank"> github </a>';
+//var linkedin = '<i class="icon-linkedin-squared"><a href="https://www.linkedin.com/in/maciej-kaczanowski-189404166/" target="_blank"> linkedin </a>';
+//
+//document.getElementById("fotInData").innerHTML = "made by Maciej Kaczanowski";
+//document.getElementById("fotInGithub").innerHTML = github;
+//document.getElementById("fotInLinkedin").innerHTML = linkedin;
 
 /*---START---very smode scroll, to eny elemnt on page---START---*/
 
