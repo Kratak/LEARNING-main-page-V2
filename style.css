@@ -28,19 +28,27 @@ body {
 
 /*Small devices (landscape phones, 576px and up)*/
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+	font-size: 10px;
+}
 
 /*Medium devices (tablets, 768px and up)*/
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+	font-size: 10px;
+}
 
 /*Large devices (desktops, 992px and up)*/
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+	font-size: 10px;
+}
 
 /*Extra large devices (large desktops, 1200px and up)*/
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+	font-size: 10px;
+}
 
 /*============ Globals =========*/
 
@@ -105,12 +113,14 @@ header figure {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	padding-bottom: 5px;
+	padding-top: 5px;
 }
 
 header figure p {
 	padding: 5px;
-	border: 3px solid red;
-	font-size: 5.3rem;
+	box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.05);
+	font-size: 4.3rem;
 	color: transparent;
 	-webkit-text-stroke-width: 0.5px;
 	-webkit-text-stroke-color: rgba(255, 255, 255, 0.5);
@@ -124,19 +134,22 @@ header figure p header nav {
 
 header nav ul {
 	display: flex;
-	align-content: center;
-	text-align: center;
-	width: 100%;
+
 	border: 3px solid black;
 	flex-wrap: wrap;
 
 }
 
 header nav ul li {
-	font-size: 0.7rem;
+	min-height: 4.2rem;
+	margin: 2px 5px;
 	border: 3px solid aqua;
-
-
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-left: 2px;
+	align-self: center;
+	justify-content: center;
 }
 
 nav ul li i:hover {
@@ -147,16 +160,33 @@ nav ul li i:hover {
 
 nav ul li i {
 	font-style: normal;
-	font-size: 0.9rem;
+	font-size: 2.2rem;
+
+	/*	background-color: transparent;*/
 }
 
 /*Small devices (landscape phones, 576px and up)*/
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+	header figure {
+
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+	header figure p {
+		font-size: 3.3rem;
+
+	}
+}
 
 /*Medium devices (tablets, 768px and up)*/
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+	header figure p {
+		font-size: 5.3rem;
+
+	}
+}
 
 /*Large devices (desktops, 992px and up)*/
 
