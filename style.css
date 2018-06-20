@@ -29,25 +29,40 @@ body {
 /*Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 576px) {
-	font-size: 10px;
+	* {
+		font-size: 10px;
+	}
 }
 
 /*Medium devices (tablets, 768px and up)*/
 
 @media (min-width: 768px) {
-	font-size: 10px;
+	* {
+		font-size: 10px;
+	}
+
+
 }
 
 /*Large devices (desktops, 992px and up)*/
 
 @media (min-width: 992px) {
-	font-size: 10px;
+	* {
+		font-size: 10px;
+	}
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
 
 @media (min-width: 1200px) {
-	font-size: 10px;
+	* {
+		font-size: 10px;
+	}
+	body {
+		max-width: 1000px;
+		box-sizing: content-box;
+		;
+	}
 }
 
 /*============ Globals =========*/
@@ -74,6 +89,7 @@ body {
 	font-size: 1.2rem;
 }
 
+
 /* '' */
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -97,7 +113,7 @@ body {
 /*============HEADER section=========*/
 
 header {
-	border: 3px solid yellow;
+	/*	border: 3px solid yellow;*/
 	width: 100vw;
 
 }
@@ -105,51 +121,52 @@ header {
 header figure {
 
 	width: 100%;
-	border: 3px solid blue;
+	/*	border: 3px solid blue;*/
 	font-size: 2.3rem;
 	color: transparent;
-	-webkit-text-stroke-width: 0.5px;
-	-webkit-text-stroke-color: rgba(255, 255, 255, 0.5);
+
 	display: flex;
-	justify-content: center;
+
 	flex-direction: column;
 	padding-bottom: 5px;
 	padding-top: 5px;
 }
 
 header figure p {
+	margin: 0 auto 0 10%;
 	padding: 5px;
-	box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.05);
+	/*	box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.05);*/
 	font-size: 4.3rem;
 	color: transparent;
 	-webkit-text-stroke-width: 0.5px;
 	-webkit-text-stroke-color: rgba(255, 255, 255, 0.5);
 }
 
-header figure p header nav {
-	background: aqua;
+header figure p:nth-child(2) {
+	border-bottom-color: rgba(255, 255, 255, 0.5);
+	border-bottom-style: solid;
+
+}
+
+header nav {
+
 	width: 100%;
+
 }
 
 
 header nav ul {
 	display: flex;
-
-	border: 3px solid black;
 	flex-wrap: wrap;
 
 }
 
 header nav ul li {
+	margin: 0 auto 0 0;
 	min-height: 4.2rem;
-	margin: 2px 5px;
-	border: 3px solid aqua;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	padding-left: 2px;
-	padding-left: 2px;
-	align-self: center;
-	justify-content: center;
+	padding: 10px;
+
+
 }
 
 nav ul li i:hover {
@@ -159,8 +176,11 @@ nav ul li i:hover {
 }
 
 nav ul li i {
+	padding: 2px;
+	padding-right: 5px;
 	font-style: normal;
 	font-size: 2.2rem;
+	box-sizing: border-box;
 
 	/*	background-color: transparent;*/
 }
@@ -168,15 +188,44 @@ nav ul li i {
 /*Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 576px) {
-	header figure {
+	header figure p:nth-child(1) {
+		border-bottom-color: rgba(255, 255, 255, 0.5);
+		border-bottom-style: solid;
 
+	}
+	header figure {
+		margin-bottom: 20px;
 		flex-direction: row;
 		justify-content: flex-start;
 	}
 	header figure p {
 		font-size: 3.3rem;
 
+
 	}
+	header figure p:nth-child(1) {
+
+		margin: 0 0 0 10%;
+
+	}
+	header figure p:nth-child(2) {
+
+		margin: 0 auto 0 0;
+
+	}
+	header nav ul li {
+		min-height: 4.2rem;
+		padding: 10px 0px;
+		align-self: center;
+		justify-content: center;
+		border-bottom-color: rgba(255, 255, 255, 0.5);
+		border-bottom-style: solid;
+		border-bottom-width: normal;
+	}
+	header nav ul li i {
+		font-size: 1.9rem;
+	}
+
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -186,6 +235,14 @@ nav ul li i {
 		font-size: 5.3rem;
 
 	}
+	header nav ul li {
+
+		padding: 10px 20px;
+
+	}
+	header nav ul li i {
+		font-size: 2.9rem;
+	}
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -194,7 +251,13 @@ nav ul li i {
 
 /*Extra large devices (large desktops, 1200px and up)*/
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+	header nav ul li {
+
+		padding: 10px 15px;
+
+	}
+}
 
 /*============HEADER section=========*/
 
@@ -204,14 +267,13 @@ main {
 	display: flex;
 	width: 100vw;
 	height: auto;
-	border: 3px solid green;
-
+	/*	border: 3px solid green;*/
 	flex-direction: column;
 }
 
 main section {
 
-	border: 3px solid aqua;
+	/*	border: 3px solid aqua;*/
 	padding-left: 10px;
 	padding-top: 10px;
 	text-align: left;
