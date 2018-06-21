@@ -10,7 +10,7 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/fontello.css">
-	<link rel="stylesheet" href="reset.css">
+	<!--	<link rel="stylesheet" href="reset.css">-->
 	<link rel="stylesheet" href="style.css">
 	<!-- ============ Fontello exaple ======== =-->
 	<!--	<i class="icon-ok"></i>-->
@@ -32,51 +32,53 @@
 			<p>Kaczanowski </p>
 		</figure>
 		<nav>
-			<ul>
-				<a href="#top">
-					<li><i class="icon-home">Home</i></li>
-				</a>
-				<a href="#work">
-					<li><i class="icon-code">My Work</i></li>
-				</a>
-				<a href="#techs">
-					<li><i class="icon-html5">Techs</i></li>
-				</a>
-				<a href="#about">
-					<li><i class="icon-user">About me</i></li>
-				</a>
-				<a href="#contact">
-					<li><i class="icon-mail-alt">Contact</i></li>
-				</a>
-			</ul>
+			<div class="sticky">
+				<ul>
+					<a href="#top">
+						<li><i class="icon-home">Home</i></li>
+					</a>
+					<a href="#work">
+						<li><i class="icon-code">My Work</i></li>
+					</a>
+					<a href="#techs">
+						<li><i class="icon-html5">Techs</i></li>
+					</a>
+					<a href="#about">
+						<li><i class="icon-user">About me</i></li>
+					</a>
+					<a href="#contact">
+						<li><i class="icon-mail-alt">Contact</i></li>
+					</a>
+				</ul>
+			</div>
 		</nav>
-
-		<section>
-
-		</section>
-
+		<figure>
+			<!--			<p>___</p>-->
+		</figure>
 	</HEADER>
 	<!-- ======================== Header ======================= -->
 
 
 	<!-- ======================== Main ======================= -->
 	<MAIN>
-
 		<section>
 			<a id="work"></a>
-			<figure>My Work</figure>
+			<figure><i class="icon-code">My Work</i></figure>
 			<article>
 				<p>- Portfolio (link, icona, og image)</p>
 				<p> - Strona (link do sotrny w budowie, og)
 				</p>
 				<p><a href="http://kratak.pl/old/webV1/index.html" target="_blank">- Previus version of website</a></p>
 				<p>- Strona (link do sotrny w budowie, og)</p>
+				<p> <a href="#top">
+						<i class="icon-home">to Home</i>
+					</a></p>
 
 			</article>
 		</section>
 		<section>
 			<a id="techs"></a>
-			<figure>Techs</figure>
+			<figure><i class="icon-html5">Techs</i></figure>
 			<article>
 				<p>HTML5, CSS3</p>
 				<p>JS jQuery</p>
@@ -85,14 +87,20 @@
 				<p>Brackets</p>
 				<p>C++ OOP Visual Studio 2015</p>
 				<p>Photoshop</p>
+				<p> <a href="#top">
+						<i class="icon-home">to Home</i>
+					</a></p>
 
 			</article>
 		</section>
 		<section>
 			<a id="about"></a>
-			<figure>About Me</figure>
+			<figure><i class="icon-user">About me</i></figure>
 			<article>
-				<span><p>Nazywam</p> się Maciej Kaczanowski, pochodzę z Polski. Od zawsze intersowałem się technolgią i zagadnieniami związanymi z komputermi, i szeroko pojętą informatyką. Moim celem na przyszły lata jest poznanie technolii fron-endowych oraz back-endowych. Naukę programowania zacząłem w 2017, od 2018 zacząłem się koncentrować na front-endzie.</spam>
+				<span><p>Nazywam</p> się Maciej Kaczanowski, pochodzę z Polski. Od zawsze intersowałem się technolgią i zagadnieniami związanymi z komputermi, i szeroko pojętą informatyką. <br><br> <p>Moim</p>  celem na przyszły lata jest poznanie technolii fron-endowych oraz back-endowych. Naukę programowania zacząłem w 2017, od 2018 zacząłem się koncentrować na front-endzie. <br>
+				<p> <a href="#top">
+						<i class="icon-home">to Home</i>
+					</a></p></span>
 			</article>
 		</section>
 
@@ -106,7 +114,7 @@
 	<FOTTER>
 
 		<section>
-			<h2>Contact</h2><br>
+			<h2><i class="icon-mail-alt">Contact</i></h2><br>
 			<i class="icon-home"><a href="#top">Home</a></i>
 			<!--			<a href="#top">Home</a>-->
 
@@ -127,15 +135,19 @@ maybe round from css magazie, or birs-->
 	<script src="core.js"></script>
 
 	<!-- ======================== Google Analytics ======================= -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120904439-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120904439-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-120904439-1');
-</script>
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-120904439-1');
+
+	</script>
 
 	<!-- ======================== Google Analytics ======================= -->
 
