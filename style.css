@@ -415,10 +415,11 @@ fotter section #alt2:before {
 
 fotter {
 	width: 100%;
-	height: 20vh;
+
 	padding-top: 10px;
 	display: flex;
 	align-items: center;
+	padding-bottom: 20px;
 
 }
 
