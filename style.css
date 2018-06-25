@@ -388,13 +388,28 @@ main section i:hover {
 /*============FOTTER section=========*/
 
 fotter {
-	border: 3px solid aqua;
-	text-align: center;
 	width: 100vw;
 	height: 20vh;
 	margin-top: 10px;
 	display: flex;
+	align-items: center;
 
+}
+
+fotter section {
+	margin: 0 auto;
+	width: 80%;
+	height: 100%;
+	text-align: center;
+}
+
+fotter h2 i {
+	font-style: normal;
+	font-size: 2.7rem;
+}
+
+fotter h2 i:hover {
+	color: aqua;
 }
 
 fotter section #aGithub,
@@ -440,5 +455,3 @@ fotter section #alinkedin:hover {
 /*Extra large devices (large desktops, 1200px and up)*/
 
 @media (min-width: 1200px) {}
-
-#sticky {}
