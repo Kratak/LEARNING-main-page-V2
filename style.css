@@ -280,16 +280,17 @@ nav ul li i {
 
 /*Large devices (desktops, 992px and up)*/
 
-@media (min-width: 992px) {}
-
-/*Extra large devices (large desktops, 1200px and up)*/
-
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
 	header nav ul li {
 		padding: 10px 5px;
+		min-width: 10rem;
 
 	}
 }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {}
 
 /*============HEADER section=========*/
 
