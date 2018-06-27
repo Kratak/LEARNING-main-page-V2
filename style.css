@@ -11,6 +11,11 @@
 
 }
 
+html {
+	margin: auto;
+	width: 90%;
+}
+
 a {
 	text-decoration: none;
 }
@@ -51,7 +56,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 @media (min-width: 576px) {
 	* {
-		font-size: 13px;
+		font-size: 14px;
 	}
 }
 
@@ -59,7 +64,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 @media (min-width: 768px) {
 	* {
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 
@@ -69,7 +74,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 @media (min-width: 992px) {
 	* {
-		font-size: 12px;
+		font-size: 14px;
 	}
 }
 
@@ -77,7 +82,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 @media (min-width: 1200px) {
 	* {
-		font-size: 12px;
+		font-size: 14px;
 	}
 	body {
 		max-width: 1000px;
@@ -178,11 +183,13 @@ header nav ul {
 	display: flex;
 	flex-wrap: wrap;
 
+
 }
 
 header nav ul li {
 	margin: 0 auto 0 0;
 	min-height: 4.2rem;
+	min-width: 13rem;
 	padding: 2px 10px;
 
 
@@ -206,12 +213,19 @@ nav ul li i {
 
 /*Small devices (landscape phones, 576px and up)*/
 
+@media(min-width: 430px) {
+	header nav ul {
+		justify-content: center;
+	}
+}
+
 @media (min-width: 576px) {
 	header figure p:nth-child(1) {
 		border-bottom-color: rgba(255, 255, 255, 0.5);
 		border-bottom-style: solid;
 
 	}
+
 	header figure {
 		margin-bottom: 20px;
 		flex-direction: row;
@@ -288,6 +302,7 @@ main {
 }
 
 main section {
+	margin-left: 15px;
 	padding-left: 5%;
 	padding-top: 10px;
 	text-align: left;
@@ -299,7 +314,7 @@ main section {
 
 main section figure {
 	font-size: 2.3rem;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 	width: 100%;
 	font-style: normal;
 }
@@ -318,7 +333,7 @@ main section figure i:hover {
 main section article {
 	flex-direction: column;
 	line-height: 1.1rem;
-	width: 100%;
+	width: 90%;
 }
 
 main section article p {
@@ -350,6 +365,11 @@ main section i:hover {
 	color: aqua
 }
 
+main h3 {
+	font-size: 1.5rem;
+	margin: 17px 0 17px 15px;
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 576px) {
@@ -366,7 +386,7 @@ main section i:hover {
 	}
 	main section figure {
 
-		width: 20%;
+		width: 30%;
 	}
 }
 
@@ -399,10 +419,7 @@ fotter .icon-github-squared:before {
 	font-size: 1.3rem;
 }
 
-main h3 {
-	font-size: 1.5rem;
-	margin: 10px 0;
-}
+
 
 main .icon-codeopen:before,
 fotter .icon-codeopen:before {
