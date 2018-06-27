@@ -96,8 +96,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 
 
-
-
 /*Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 576px) {}
@@ -394,18 +392,24 @@ fotter .icon-linkedin-squared:before {
 	color: #0077B5;
 }
 
+main .icon-github-squared:before,
 fotter .icon-github-squared:before {
 	content: '\f300';
 	color: whitesmoke;
 	font-size: 1.3rem;
 }
 
+main h3 {
+	font-size: 1.5rem;
+	margin: 10px 0;
+}
+
+main .icon-codeopen:before,
 fotter .icon-codeopen:before {
 	content: '\f1cb';
 	color: #000000;
 	font-size: 1.3rem;
 }
-
 
 fotter section #alt2:before {
 	content: '\f0e0';
@@ -453,15 +457,15 @@ fotter i a:hover {
 	color: aqua
 }
 
-fotter section #aGithub,
-fotter section #aGithub:link,
-fotter section #aGithub:hover,
-fotter section #aGithub:visited,
-fotter section #aGithub:active {
+.aGithub,
+.aGithub:link,
+.aGithub:hover,
+.aGithub:visited,
+.aGithub:active {
 	text-decoration: none;
 }
 
-fotter section #aGithub:hover {
+.aGithub:hover {
 	color: white;
 	text-decoration: underline;
 }
@@ -492,15 +496,15 @@ fotter section #amail:hover {
 	text-decoration: underline;
 }
 
-fotter section #aCodepen,
-fotter section #aCodepen:link,
-fotter section #aCodepen:hover,
-fotter section #aCodepen:visited,
-fotter section #aCodepen:active {
+.aCodepen,
+.aCodepen:link,
+.aCodepen:hover,
+.aCodepen:visited,
+.aCodepen:active {
 	text-decoration: none;
 }
 
-fotter section #aCodepen:hover {
+.aCodepen:hover {
 	color: #000;
 	text-decoration: underline;
 }
