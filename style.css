@@ -407,6 +407,21 @@ main h3 {
 
 /*============FOTTER section=========*/
 
+fotter section {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+fotter section hgroup {
+	width: 100%;
+}
+
+fotter section article {
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
+}
+
 fotter .icon-linkedin-squared:before {
 	content: '\f30c';
 	font-size: 1.3rem;
@@ -536,7 +551,22 @@ fotter section #amail:hover {
 
 /*Medium devices (tablets, 768px and up)*/
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+	fotter section {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	fotter section hgroup {
+		width: 100%;
+	}
+
+	fotter section article {
+		width: 50%;
+		text-align: left;
+		padding-left: 20%;
+	}
+}
 
 /*Large devices (desktops, 992px and up)*/
 
